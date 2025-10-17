@@ -1,0 +1,33 @@
+.el {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  grid-column: 1 / span 4;
+}
+
+.navigation {
+  grid-column: 5 / span 8;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.cta {
+  grid-column: 13 / span 4;
+  text-align: right;
+}
+
+.link {
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}

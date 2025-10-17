@@ -1,0 +1,8 @@
+.el {
+  display: grid;
+
+  width: 100%;
+  max-width: 1440px;
+
+  grid-template-columns: repeat(16, 1fr);
+}

@@ -1,0 +1,21 @@
+.el {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  // background-color: #ffffff;
+  // color: #365ba1;
+
+  background-color: #f9f9f9;
+
+  &:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}
+
+.inner {
+  padding: 0 10px;
+
+  width: 100%;
+  max-width: 1460px;
+}

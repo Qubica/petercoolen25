@@ -1,0 +1,51 @@
+.el {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.eyebrow {
+  grid-column: 4 / span 10;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.5;
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+.heading {
+  grid-column: 4 / span 10;
+  font-size: 32px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content {
+  grid-column: 4 / span 10;
+  text-align: center;
+}
+
+.item1 {
+  margin-top: 32px;
+  grid-column: 2 / span 4;
+  text-align: left;
+}
+
+.item2 {
+  margin-top: 32px;
+  grid-column: 7 / span 4;
+  text-align: left;
+}
+
+.item3 {
+  margin-top: 32px;
+  grid-column: 12 / span 4;
+  text-align: left;
+}

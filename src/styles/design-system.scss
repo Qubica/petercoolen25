@@ -1,0 +1,565 @@
+// Design System - CSS Variables & Core Styles
+:root {
+  // Color System
+  --color-primary: #000000;
+  --color-primary-light: #333333;
+  --color-secondary: #666666;
+  --color-background: #ffffff;
+  --color-background-alt: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text-primary: #000000;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+  --color-accent: #0070f3;
+
+  // Typography Scale
+  --font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono: "SF Mono", Monaco, Inconsolata, "Roboto Mono", Consolas,
+    "Courier New", monospace;
+
+  // Font Sizes (using fluid typography)
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --font-size-3xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.5rem);
+  --font-size-4xl: clamp(2.25rem, 1.9rem + 1.75vw, 3.5rem);
+  --font-size-5xl: clamp(2.75rem, 2.3rem + 2.25vw, 4.5rem);
+
+  // Line Heights
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  // Font Weights
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  // Spacing Scale
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 3rem;
+  --space-4xl: 4rem;
+  --space-5xl: 5rem;
+  --space-6xl: 6rem;
+  --space-8xl: 8rem;
+  --space-10xl: 10rem;
+
+  // Border Radius
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  // Shadows
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  // Container Widths
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1440px;
+  --container-3xl: 1536px;
+
+  // Grid System (16 columns)
+  --grid-columns: 16;
+  --grid-gutter: 1.5rem;
+  --grid-margin: 2rem;
+
+  // Transitions
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  // Z-index Scale
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+}
+
+// Base Styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// // Typography Utilities
+// .text-xs {
+//   font-size: var(--font-size-xs);
+// }
+// .text-sm {
+//   font-size: var(--font-size-sm);
+// }
+// .text-base {
+//   font-size: var(--font-size-base);
+// }
+// .text-lg {
+//   font-size: var(--font-size-lg);
+// }
+// .text-xl {
+//   font-size: var(--font-size-xl);
+// }
+// .text-2xl {
+//   font-size: var(--font-size-2xl);
+// }
+// .text-3xl {
+//   font-size: var(--font-size-3xl);
+// }
+// .text-4xl {
+//   font-size: var(--font-size-4xl);
+// }
+// .text-5xl {
+//   font-size: var(--font-size-5xl);
+// }
+
+// .font-light {
+//   font-weight: var(--font-weight-light);
+// }
+// .font-normal {
+//   font-weight: var(--font-weight-normal);
+// }
+// .font-medium {
+//   font-weight: var(--font-weight-medium);
+// }
+// .font-semibold {
+//   font-weight: var(--font-weight-semibold);
+// }
+// .font-bold {
+//   font-weight: var(--font-weight-bold);
+// }
+
+// .leading-tight {
+//   line-height: var(--line-height-tight);
+// }
+// .leading-snug {
+//   line-height: var(--line-height-snug);
+// }
+// .leading-normal {
+//   line-height: var(--line-height-normal);
+// }
+// .leading-relaxed {
+//   line-height: var(--line-height-relaxed);
+// }
+// .leading-loose {
+//   line-height: var(--line-height-loose);
+// }
+
+// // Color Utilities
+// .text-primary {
+//   color: var(--color-text-primary);
+// }
+// .text-secondary {
+//   color: var(--color-text-secondary);
+// }
+// .text-muted {
+//   color: var(--color-text-muted);
+// }
+
+// // Container
+// .container {
+//   width: 100%;
+//   max-width: var(--container-2xl); // 1440px
+//   margin: 0 auto;
+//   padding: 0 var(--grid-margin);
+
+//   @media (min-width: 640px) {
+//     padding: 0 var(--grid-margin);
+//   }
+
+//   @media (min-width: 1024px) {
+//     padding: 0 var(--space-3xl);
+//   }
+// }
+
+// // Grid System
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(var(--grid-columns), 1fr);
+//   gap: var(--grid-gutter);
+// }
+
+// .grid-full {
+//   grid-column: 1 / -1;
+// }
+
+// // Grid column spans
+// .col-1 {
+//   grid-column: span 1;
+// }
+// .col-2 {
+//   grid-column: span 2;
+// }
+// .col-3 {
+//   grid-column: span 3;
+// }
+// .col-4 {
+//   grid-column: span 4;
+// }
+// .col-5 {
+//   grid-column: span 5;
+// }
+// .col-6 {
+//   grid-column: span 6;
+// }
+// .col-7 {
+//   grid-column: span 7;
+// }
+// .col-8 {
+//   grid-column: span 8;
+// }
+// .col-9 {
+//   grid-column: span 9;
+// }
+// .col-10 {
+//   grid-column: span 10;
+// }
+// .col-11 {
+//   grid-column: span 11;
+// }
+// .col-12 {
+//   grid-column: span 12;
+// }
+// .col-13 {
+//   grid-column: span 13;
+// }
+// .col-14 {
+//   grid-column: span 14;
+// }
+// .col-15 {
+//   grid-column: span 15;
+// }
+// .col-16 {
+//   grid-column: span 16;
+// }
+
+// // Responsive grid columns
+// @media (min-width: 640px) {
+//   .sm\:col-1 {
+//     grid-column: span 1;
+//   }
+//   .sm\:col-2 {
+//     grid-column: span 2;
+//   }
+//   .sm\:col-3 {
+//     grid-column: span 3;
+//   }
+//   .sm\:col-4 {
+//     grid-column: span 4;
+//   }
+//   .sm\:col-5 {
+//     grid-column: span 5;
+//   }
+//   .sm\:col-6 {
+//     grid-column: span 6;
+//   }
+//   .sm\:col-7 {
+//     grid-column: span 7;
+//   }
+//   .sm\:col-8 {
+//     grid-column: span 8;
+//   }
+//   .sm\:col-9 {
+//     grid-column: span 9;
+//   }
+//   .sm\:col-10 {
+//     grid-column: span 10;
+//   }
+//   .sm\:col-11 {
+//     grid-column: span 11;
+//   }
+//   .sm\:col-12 {
+//     grid-column: span 12;
+//   }
+//   .sm\:col-13 {
+//     grid-column: span 13;
+//   }
+//   .sm\:col-14 {
+//     grid-column: span 14;
+//   }
+//   .sm\:col-15 {
+//     grid-column: span 15;
+//   }
+//   .sm\:col-16 {
+//     grid-column: span 16;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .md\:col-1 {
+//     grid-column: span 1;
+//   }
+//   .md\:col-2 {
+//     grid-column: span 2;
+//   }
+//   .md\:col-3 {
+//     grid-column: span 3;
+//   }
+//   .md\:col-4 {
+//     grid-column: span 4;
+//   }
+//   .md\:col-5 {
+//     grid-column: span 5;
+//   }
+//   .md\:col-6 {
+//     grid-column: span 6;
+//   }
+//   .md\:col-7 {
+//     grid-column: span 7;
+//   }
+//   .md\:col-8 {
+//     grid-column: span 8;
+//   }
+//   .md\:col-9 {
+//     grid-column: span 9;
+//   }
+//   .md\:col-10 {
+//     grid-column: span 10;
+//   }
+//   .md\:col-11 {
+//     grid-column: span 11;
+//   }
+//   .md\:col-12 {
+//     grid-column: span 12;
+//   }
+//   .md\:col-13 {
+//     grid-column: span 13;
+//   }
+//   .md\:col-14 {
+//     grid-column: span 14;
+//   }
+//   .md\:col-15 {
+//     grid-column: span 15;
+//   }
+//   .md\:col-16 {
+//     grid-column: span 16;
+//   }
+// }
+
+// @media (min-width: 1024px) {
+//   .lg\:col-1 {
+//     grid-column: span 1;
+//   }
+//   .lg\:col-2 {
+//     grid-column: span 2;
+//   }
+//   .lg\:col-3 {
+//     grid-column: span 3;
+//   }
+//   .lg\:col-4 {
+//     grid-column: span 4;
+//   }
+//   .lg\:col-5 {
+//     grid-column: span 5;
+//   }
+//   .lg\:col-6 {
+//     grid-column: span 6;
+//   }
+//   .lg\:col-7 {
+//     grid-column: span 7;
+//   }
+//   .lg\:col-8 {
+//     grid-column: span 8;
+//   }
+//   .lg\:col-9 {
+//     grid-column: span 9;
+//   }
+//   .lg\:col-10 {
+//     grid-column: span 10;
+//   }
+//   .lg\:col-11 {
+//     grid-column: span 11;
+//   }
+//   .lg\:col-12 {
+//     grid-column: span 12;
+//   }
+//   .lg\:col-13 {
+//     grid-column: span 13;
+//   }
+//   .lg\:col-14 {
+//     grid-column: span 14;
+//   }
+//   .lg\:col-15 {
+//     grid-column: span 15;
+//   }
+//   .lg\:col-16 {
+//     grid-column: span 16;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .xl\:col-1 {
+//     grid-column: span 1;
+//   }
+//   .xl\:col-2 {
+//     grid-column: span 2;
+//   }
+//   .xl\:col-3 {
+//     grid-column: span 3;
+//   }
+//   .xl\:col-4 {
+//     grid-column: span 4;
+//   }
+//   .xl\:col-5 {
+//     grid-column: span 5;
+//   }
+//   .xl\:col-6 {
+//     grid-column: span 6;
+//   }
+//   .xl\:col-7 {
+//     grid-column: span 7;
+//   }
+//   .xl\:col-8 {
+//     grid-column: span 8;
+//   }
+//   .xl\:col-9 {
+//     grid-column: span 9;
+//   }
+//   .xl\:col-10 {
+//     grid-column: span 10;
+//   }
+//   .xl\:col-11 {
+//     grid-column: span 11;
+//   }
+//   .xl\:col-12 {
+//     grid-column: span 12;
+//   }
+//   .xl\:col-13 {
+//     grid-column: span 13;
+//   }
+//   .xl\:col-14 {
+//     grid-column: span 14;
+//   }
+//   .xl\:col-15 {
+//     grid-column: span 15;
+//   }
+//   .xl\:col-16 {
+//     grid-column: span 16;
+//   }
+// }
+
+// // Button Base Styles
+// .btn {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: var(--space-sm);
+//   padding: var(--space-md) var(--space-xl);
+//   font-size: var(--font-size-base);
+//   font-weight: var(--font-weight-medium);
+//   line-height: 1;
+//   text-decoration: none;
+//   border: 1px solid transparent;
+//   border-radius: var(--radius-lg);
+//   transition: var(--transition-base);
+//   cursor: pointer;
+
+//   &:disabled {
+//     opacity: 0.5;
+//     cursor: not-allowed;
+//   }
+// }
+
+// .btn-primary {
+//   background-color: var(--color-primary);
+//   color: var(--color-background);
+//   border-color: var(--color-primary);
+
+//   &:hover:not(:disabled) {
+//     background-color: var(--color-primary-light);
+//     border-color: var(--color-primary-light);
+//   }
+// }
+
+// .btn-secondary {
+//   background-color: transparent;
+//   color: var(--color-primary);
+//   border-color: var(--color-border);
+
+//   &:hover:not(:disabled) {
+//     background-color: var(--color-background-alt);
+//   }
+// }
+
+// // Responsive Utilities
+// @media (min-width: 640px) {
+//   .sm\:hidden {
+//     display: none;
+//   }
+// }
+// @media (min-width: 768px) {
+//   .md\:hidden {
+//     display: none;
+//   }
+// }
+// @media (min-width: 1024px) {
+//   .lg\:hidden {
+//     display: none;
+//   }
+// }
+// @media (min-width: 1280px) {
+//   .xl\:hidden {
+//     display: none;
+//   }
+// }
+
+// @media (max-width: 639px) {
+//   .sm\:block {
+//     display: block;
+//   }
+// }
+// @media (max-width: 767px) {
+//   .md\:block {
+//     display: block;
+//   }
+// }
+// @media (max-width: 1023px) {
+//   .lg\:block {
+//     display: block;
+//   }
+// }
+// @media (max-width: 1279px) {
+//   .xl\:block {
+//     display: block;
+//   }
+// }
