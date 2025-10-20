@@ -14,7 +14,7 @@ interface Props {
 
 export function SelectedWork({ className }: Props) {
   return (
-    <Section classNameInner={cn(styles.el, className)}>
+    <Section classNameInner={cn(styles.el, className)} id="work">
       <Grid>
         <div className={styles.aside}>
           <p className={styles.eyebrow}>Selected Work</p>

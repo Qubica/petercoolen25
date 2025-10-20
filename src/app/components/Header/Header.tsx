@@ -32,6 +32,9 @@ export function Header({ className }: Props) {
           <a className={styles.link} href="#value">
             Value
           </a>
+          <a className={styles.link} href="#work">
+            Work
+          </a>
           <a className={styles.link} href="#about">
             About
           </a>

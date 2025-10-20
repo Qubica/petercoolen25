@@ -10,19 +10,31 @@
 }
 
 .logo {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 8;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 1 / span 4;
+  }
 }
 
 .navigation {
-  grid-column: 5 / span 8;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 5 / span 8;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
 }
 
 .cta {
-  grid-column: 13 / span 4;
+  grid-column: 9 / span 8;
   text-align: right;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 13 / span 4;
+  }
 }
 
 .link {

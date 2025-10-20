@@ -27,7 +27,7 @@ export function Hero({ className }: Props) {
         </p>
 
         <div className={styles.footer}>
-          <a href="">See my work</a>
+          <a href="#work">See what we can do for you</a>
         </div>
       </Grid>
     </Section>

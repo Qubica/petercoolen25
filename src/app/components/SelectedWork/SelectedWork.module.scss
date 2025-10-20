@@ -1,10 +1,19 @@
 .el {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .aside {
-  grid-column: 5 / span 8;
+  grid-column: 1 / span 16;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 5 / span 8;
+  }
 }
 
 .logo {
@@ -16,11 +25,15 @@
 .item1,
 .item2,
 .item3 {
-  margin-top: 32px;
-  grid-column: 2 / span 14;
+  grid-column: 1 / span 16;
 
-  display: grid;
-  grid-template-columns: repeat(14, 1fr);
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    grid-column: 2 / span 14;
+
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+  }
 }
 
 .itemAside {
@@ -41,13 +54,21 @@
   opacity: 0.5;
 
   margin-bottom: 16px;
-  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 }
 
 .heading {
-  font-size: 32px;
-  margin-bottom: 16px;
-  text-align: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
 }
 
 .intro {

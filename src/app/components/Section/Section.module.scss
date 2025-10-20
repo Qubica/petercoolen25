@@ -14,8 +14,12 @@
 }
 
 .inner {
-  padding: 0 10px;
+  padding: 0 16px;
 
   width: 100%;
   max-width: 1460px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 10px;
+  }
 }

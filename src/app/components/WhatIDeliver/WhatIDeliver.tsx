@@ -25,17 +25,17 @@ export function WhatIDeliver({ className }: Props) {
         <div className={styles.content}>
           <p className={styles.intro}>
             Most storefronts start with a template and ask your brand to fit in.
-            I do the opposite. I build around your brand, exactly as it&rsquo;s
-            meant to show up.
+            We do the opposite. We build around your brand, exactly as
+            it&rsquo;s meant to show up.
           </p>
 
           <p>
             Every detail is crafted to reflect the identity you&rsquo;ve
-            invested in — from the way the homepage flows, to how the product
+            invested in. From the way the homepage flows, to how the product
             story unfolds, to the micro-interactions that make it feel alive.
             Nothing gets lost in translation. No compromises on layout, story,
             or experience. If it&rsquo;s in your design system, it&rsquo;s in
-            the final build — just as intended.
+            the final build. Just as intended.
           </p>
 
           <p>

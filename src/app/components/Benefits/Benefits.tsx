@@ -36,7 +36,7 @@ export function Benefits({ className }: Props) {
         </div>
 
         <p className={styles.content}>
-          Based on:{" "}
+          Source:{" "}
           <a href="https://gitnux.org/headless-commerce-statistics/">
             Headless Commerce Statistics 2025
           </a>

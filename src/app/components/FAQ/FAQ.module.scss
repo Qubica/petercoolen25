@@ -1,14 +1,27 @@
 .el {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .aside {
-  grid-column: 2 / span 4;
+  grid-column: 1 / span 16;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 2 / span 4;
+  }
 }
 
 .content {
-  grid-column: 7 / span 8;
+  grid-column: 1 / span 16;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 7 / span 8;
+  }
 }
 
 .eyebrow {
@@ -21,8 +34,13 @@
 }
 
 .heading {
-  font-size: 32px;
-  margin-bottom: 16px;
+  font-size: 24px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
 }
 
 .intro {

@@ -1,51 +1,90 @@
 .el {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .eyebrow {
-  grid-column: 4 / span 10;
+  grid-column: 1 / span 16;
 
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 700;
   opacity: 0.5;
-  text-align: center;
-
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 4 / span 10;
+    text-align: center;
+  }
 }
 
 .heading {
-  grid-column: 4 / span 10;
-  font-size: 32px;
-  margin-bottom: 16px;
-  text-align: center;
+  grid-column: 1 / span 16;
+
+  font-size: 24px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 4 / span 10;
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
 }
 
 .intro {
-  font-size: 20px;
   font-weight: 500;
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 20px;
+  }
 }
 
 .content {
-  grid-column: 4 / span 10;
-  text-align: center;
+  grid-column: 1 / span 16;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 4 / span 10;
+    text-align: center;
+  }
 }
 
 .item1 {
-  margin-top: 32px;
-  grid-column: 2 / span 4;
-  text-align: left;
+  grid-column: 1 / span 16;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    grid-column: 2 / span 4;
+    text-align: left;
+  }
 }
 
 .item2 {
-  margin-top: 32px;
-  grid-column: 7 / span 4;
-  text-align: left;
+  grid-column: 1 / span 16;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    grid-column: 7 / span 4;
+    text-align: left;
+  }
 }
 
 .item3 {
-  margin-top: 32px;
-  grid-column: 12 / span 4;
-  text-align: left;
+  grid-column: 1 / span 16;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    grid-column: 12 / span 4;
+    text-align: left;
+  }
 }
