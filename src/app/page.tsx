@@ -150,9 +150,9 @@ export default function CreativeDeveloperLanding() {
         {/* Footer */}
         <footer className={styles.section}>
           <h2 className={styles.heading2}>
-            Let’s craft something
+            Let’s create something
             <br />
-            people remember.
+            people remember
           </h2>
           <div>
             <p className={styles.paragraph}>
