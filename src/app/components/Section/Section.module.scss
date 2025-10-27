@@ -3,13 +3,15 @@
   justify-content: center;
   width: 100%;
 
-  // background-color: #ffffff;
+  background-color: #ffffff;
   // color: #365ba1;
 
-  background-color: #f9f9f9;
+  // background-color: #bebbf6;
+  color: #0c1a1f;
 
   &:nth-child(odd) {
     background-color: #ffffff;
+    color: #0c1a1f;
   }
 }
 

@@ -15,10 +15,8 @@ export function About({ className }: Props) {
     <Section classNameInner={cn(styles.el, className)} id="about">
       <Grid>
         <div className={styles.aside}>
-          <p className={styles.eyebrow}>About</p>
-
           <Heading as="h2" className={styles.heading}>
-            Headless e-commerce and Shopify Plus
+            We believe every interaction is an opportunity to tell your story.
           </Heading>
         </div>
 

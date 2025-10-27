@@ -16,11 +16,8 @@ export function FAQ({ className }: Props) {
     <Section classNameInner={cn(styles.el, className)} id="faq">
       <Grid>
         <div className={styles.aside}>
-          <p className={styles.eyebrow}>Frequently asked questions</p>
-
           <Heading as="h2" className={styles.heading}>
-            Curious? <br />
-            We’re Ready.
+            Frequently asked questions
           </Heading>
         </div>
 

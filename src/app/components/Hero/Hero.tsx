@@ -5,6 +5,7 @@ import { Grid } from "../Grid/Grid";
 
 import styles from "./Hero.module.scss";
 import { Heading } from "../Heading/Heading";
+import { ButtonPrimary } from "../ButtonPrimary/ButtonPrimary";
 
 interface Props {
   className?: string;
@@ -12,22 +13,31 @@ interface Props {
 
 export function Hero({ className }: Props) {
   return (
-    <Section classNameInner={cn(styles.el, className)}>
+    <Section className={styles.el} classNameInner={cn(styles.inner, className)}>
+      <div className={styles.background} />
+
       <Grid>
         <Heading as="h1" className={styles.heading}>
-          Shopify experiences that
-          <br />
-          connect brand, story & conversion.
+          Shopify experiences <br />
+          that connect brand, <br />
+          story & conversion.
         </Heading>
 
         <p className={styles.subheading}>
           We build Headless Shopify stores that give your team creative freedom.
-          <br />
-          <em>Faster launches. Stronger stories. Better results.</em>
+          Faster launches. Stronger stories. Better results.
         </p>
 
         <div className={styles.footer}>
-          <a href="#work">See what we can do for you</a>
+          <a href="#work">
+            <ButtonPrimary label="See what we can do for you" />
+          </a>
+        </div>
+
+        <div className={styles.benefits}>
+          <span>Increase conversions</span>
+          <span>Grow revenue</span>
+          <span>Reduce time-to-market</span>
         </div>
       </Grid>
     </Section>

@@ -15,8 +15,6 @@ export function Problem({ className }: Props) {
     <Section classNameInner={cn(styles.el, className)} id="challenge">
       <Grid>
         <div className={styles.aside}>
-          <p className={styles.eyebrow}>Your template is holding you back</p>
-
           <Heading as="h2" className={styles.heading}>
             Your brand’s potential is stuck in the template.
           </Heading>

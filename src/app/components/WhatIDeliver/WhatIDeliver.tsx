@@ -5,6 +5,7 @@ import { Section } from "../Section/Section";
 import styles from "./WhatIDeliver.module.scss";
 import { Grid } from "../Grid/Grid";
 import { Heading } from "../Heading/Heading";
+import { ButtonPrimary } from "../ButtonPrimary/ButtonPrimary";
 
 interface Props {
   className?: string;
@@ -12,13 +13,18 @@ interface Props {
 
 export function WhatIDeliver({ className }: Props) {
   return (
-    <Section classNameInner={cn(styles.el, className)} id="promise">
+    <Section
+      className={styles.el}
+      classNameInner={cn(styles.inner, className)}
+      id="promise"
+    >
+      <div className={styles.background} />
+      <div className={styles.background2} />
+
       <Grid>
         <div className={styles.aside}>
-          <p className={styles.eyebrow}>You&apos;ll get</p>
-
           <Heading as="h2" className={styles.heading}>
-            A Store That&rsquo;s Built For Your Brand.
+            Get a Store That&rsquo;s Built For Your Brand.
           </Heading>
         </div>
 
@@ -45,6 +51,10 @@ export function WhatIDeliver({ className }: Props) {
             No more &ldquo;we can&rsquo;t do that.&rdquo; Just a storefront that
             feels unmistakably you, and works as well as it looks.
           </p>
+
+          <a href="mailto:info@petercoolen.com">
+            <ButtonPrimary label="Build my store" />
+          </a>
         </div>
       </Grid>
     </Section>

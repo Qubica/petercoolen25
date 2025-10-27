@@ -8,6 +8,14 @@
   }
 }
 
+.aside {
+  grid-column: 1 / span 16;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 2 / span 4;
+  }
+}
+
 .eyebrow {
   grid-column: 1 / span 16;
 
@@ -19,7 +27,7 @@
 
   @media screen and (min-width: 768px) {
     grid-column: 4 / span 10;
-    text-align: center;
+    // text-align: center;
   }
 }
 
@@ -30,10 +38,10 @@
   margin-bottom: 12px;
 
   @media screen and (min-width: 768px) {
-    grid-column: 4 / span 10;
+    grid-column: 2 / span 6;
     font-size: 32px;
     margin-bottom: 16px;
-    text-align: center;
+    // text-align: center;
   }
 }
 
@@ -52,38 +60,31 @@
 
   @media screen and (min-width: 768px) {
     grid-column: 4 / span 10;
-    text-align: center;
+    // text-align: center;
   }
 }
 
-.item1 {
+.item1,
+.item3,
+.item5 {
   grid-column: 1 / span 16;
-  margin-top: 16px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 32px;
-    grid-column: 2 / span 4;
-    text-align: left;
-  }
-}
-
-.item2 {
-  grid-column: 1 / span 16;
-  margin-top: 16px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 32px;
+    margin-bottom: 32px;
     grid-column: 7 / span 4;
     text-align: left;
   }
 }
 
-.item3 {
+.item2,
+.item4,
+.item6 {
   grid-column: 1 / span 16;
-  margin-top: 16px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 32px;
+    margin-bottom: 32px;
     grid-column: 12 / span 4;
     text-align: left;
   }

@@ -52,3 +52,24 @@
     font-size: 20px;
   }
 }
+
+.item1 {
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    grid-column: 2 / span 4;
+  }
+}
+
+.item2 {
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    grid-column: 7 / span 4;
+  }
+}
+
+.item3 {
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    grid-column: 12 / span 4;
+  }
+}

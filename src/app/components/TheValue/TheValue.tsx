@@ -14,15 +14,16 @@ export function TheValue({ className }: Props) {
   return (
     <Section classNameInner={cn(styles.el, className)} id="value">
       <Grid>
-        <p className={styles.eyebrow}>The Value You Actually Get</p>
-        <Heading as="h2" className={styles.heading}>
-          Unlock your brand’s full potential
-        </Heading>
-        <div className={styles.content}>
-          <p className={styles.intro}>
-            Start to remove friction and flatten bottlenecks. <br />
-            Build a store that actually works the way your brand and team do.
-          </p>
+        <div className={styles.aside}>
+          <Heading as="h2" className={styles.heading}>
+            Expect to Unlock your brand’s full potential
+          </Heading>
+          <div className={styles.content}>
+            <p className={styles.intro}>
+              Start to remove friction and flatten bottlenecks. <br />
+              Build a store that actually works the way your brand and team do.
+            </p>
+          </div>
         </div>
 
         <div className={styles.item1}>
@@ -57,7 +58,7 @@ export function TheValue({ className }: Props) {
           </p>
         </div>
 
-        <div className={styles.item1}>
+        <div className={styles.item4}>
           <Heading as="h3">Faster Creative Iteration</Heading>
 
           <p>
@@ -67,7 +68,7 @@ export function TheValue({ className }: Props) {
             faster learning equals faster growth.
           </p>
         </div>
-        <div className={styles.item2}>
+        <div className={styles.item5}>
           <Heading as="h3">Lower Maintenance Costs</Heading>
 
           <p>
@@ -77,7 +78,7 @@ export function TheValue({ className }: Props) {
             long-term costs.
           </p>
         </div>
-        <div className={styles.item3}>
+        <div className={styles.item6}>
           <Heading as="h3">Increased Customer Retention</Heading>
 
           <p>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/main.scss";
-import { Header } from "./components/Header/Header";
-import { Footer } from "./components/Footer/Footer";
+
 import { Figtree, Inter, Lato, Open_Sans } from "next/font/google";
 
 export const metadata: Metadata = {
@@ -39,11 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
-        <div className="main">
-          {/* <Header /> */}
-          {children}
-          {/* <Footer /> */}
-        </div>
+        <div className="main">{children}</div>
       </body>
     </html>
   );

@@ -4,6 +4,7 @@ import { Section } from "../Section/Section";
 
 import styles from "./Header.module.scss";
 import { Grid } from "../Grid/Grid";
+import { ButtonPrimary } from "../ButtonPrimary/ButtonPrimary";
 
 interface Props {
   className?: string;
@@ -45,7 +46,7 @@ export function Header({ className }: Props) {
 
         <div className={styles.cta}>
           <a className={styles.link} href="mailto:info@petercoolen.com">
-            Get in Touch
+            <ButtonPrimary label="Contact" />
           </a>
         </div>
       </Grid>

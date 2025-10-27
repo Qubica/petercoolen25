@@ -27,8 +27,6 @@ export function LogoMarquee({ className }: Props) {
   return (
     <Section classNameInner={cn(styles.el, className)}>
       <Grid>
-        <p className={styles.eyebrow}>Trusted technologies</p>
-
         <Heading as="h2" className={styles.heading}>
           Built with best-in-class tools
         </Heading>

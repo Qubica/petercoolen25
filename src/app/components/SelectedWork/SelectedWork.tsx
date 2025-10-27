@@ -7,6 +7,7 @@ import { Heading } from "../Heading/Heading";
 import Image from "next/image";
 
 import styles from "./SelectedWork.module.scss";
+import { ButtonPrimary } from "../ButtonPrimary/ButtonPrimary";
 
 interface Props {
   className?: string;
@@ -17,8 +18,6 @@ export function SelectedWork({ className }: Props) {
     <Section classNameInner={cn(styles.el, className)} id="work">
       <Grid>
         <div className={styles.aside}>
-          <p className={styles.eyebrow}>Selected Work</p>
-
           <Heading as="h2" className={styles.heading}>
             Trusted by brands that move fast.
           </Heading>
@@ -41,7 +40,9 @@ export function SelectedWork({ className }: Props) {
               community-driven shopping experience.
             </p>
 
-            <a href="https://www.orangefit.nl">View Project</a>
+            <a href="https://www.orangefit.nl">
+              <ButtonPrimary label="View Project" />
+            </a>
           </div>
 
           <Image
@@ -69,7 +70,9 @@ export function SelectedWork({ className }: Props) {
               conversion-focused journey.
             </p>
 
-            <a href="https://www.thelaundrystory.nl">View Project</a>
+            <a href="https://www.thelaundrystory.nl">
+              <ButtonPrimary label="View Project" />
+            </a>
           </div>
 
           <Image
@@ -98,7 +101,9 @@ export function SelectedWork({ className }: Props) {
               art into a collectible digital experience.
             </p>
 
-            <a href="https://eusexua.fkatwi.gs">View Project</a>
+            <a href="https://eusexua.fkatwi.gs">
+              <ButtonPrimary label="View Project" />
+            </a>
           </div>
 
           <Image
