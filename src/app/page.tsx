@@ -1,7 +1,6 @@
-"use client";
-
 import { Heart } from "lucide-react";
 import styles from "./page.module.scss";
+import { JsonLd } from "./components/JsonLd/JsonLd";
 
 export default function CreativeDeveloperLanding() {
   return (
@@ -221,6 +220,8 @@ export default function CreativeDeveloperLanding() {
           </span>
         </a>
       </div>
+
+      <JsonLd />
     </div>
   );
 }

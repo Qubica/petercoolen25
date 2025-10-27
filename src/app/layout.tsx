@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Peter Coolen" }],
   openGraph: {
-    title: "Peter Coolen - Headless Shopify Developer",
-    description: "Shopify experiences that connect brand, story & conversion.",
+    title: "Peter Coolen Creative Developer",
+    description: "Meaningful interactions build memorable brands",
     type: "website",
   },
 };
