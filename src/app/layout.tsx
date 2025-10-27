@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import "@/styles/main.scss";
-import { Header } from "./components/Header/Header";
-import { Footer } from "./components/Footer/Footer";
-import { Figtree, Inter, Lato, Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "Peter Coolen - Headless Shopify Developer",
+  title: "Peter Coolen Creative Developer",
   description:
-    "I build headless Shopify stores that give your team creative freedom. Faster launches. Stronger stories. Better results.",
+    "I'm a creative developer who builds digital experiences that move, literally and emotionally. In collaboration with designers and brands, I craft the kind of websites people feel, not just click.",
   keywords: [
     "Shopify",
     "Headless",
     "E-commerce",
     "Developer",
+    "Hydrogen",
+    "Creative",
+    "Web animations",
     "Next.js",
     "React",
   ],
@@ -39,11 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
-        <div className="main">
-          {/* <Header /> */}
-          {children}
-          {/* <Footer /> */}
-        </div>
+        <div className="main">{children}</div>
       </body>
     </html>
   );
