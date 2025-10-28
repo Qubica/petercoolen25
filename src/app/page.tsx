@@ -170,20 +170,6 @@ export default function CreativeDeveloperLanding() {
               depend on. Project after project.
             </p>
 
-            <p className={styles.paragraph}>
-              Reach out if you&rsquo;d like to discuss your next project.
-              <br />
-              Phone: &emsp;
-              <a href="tel:+31657546027" className={styles.link}>
-                +31657546027
-              </a>
-              <br />
-              Mail: &emsp;&emsp;
-              <a href="mailto:info@petercoolen.com" className={styles.link}>
-                info@petercoolen.com
-              </a>
-            </p>
-
             <div className={styles.buttonRow}>
               <a
                 href="mailto:info@petercoolen.com"
@@ -199,6 +185,18 @@ export default function CreativeDeveloperLanding() {
         </footer>
 
         <section className={styles.section}>
+          <p className={styles.paragraph}>
+            Phone: &emsp;
+            <a href="tel:+31657546027" className={styles.link}>
+              +31657546027
+            </a>
+            <br />
+            Mail: &emsp;&emsp;
+            <a href="mailto:info@petercoolen.com" className={styles.link}>
+              info@petercoolen.com
+            </a>
+          </p>
+
           <p className={styles.paragraphSmall}>
             © 2025 Peter Coolen Creative Developer
             <br />
