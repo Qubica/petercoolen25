@@ -1,0 +1,63 @@
+.el {
+  background-color: white;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  left: 1rem;
+
+  padding: 1rem;
+  margin: auto;
+
+  // color: white;
+
+  z-index: 1000;
+
+  border-radius: 2rem;
+
+  box-shadow: 0 0 8px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 1),
+    0 0 8px rgba(255, 255, 255, 1);
+
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+
+    bottom: 3rem;
+    right: 3rem;
+    left: 3rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.button,
+.buttonPrimary {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem 0.75rem 0.75rem 1.15rem;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  // color: white;
+  // color: black;
+
+  border-radius: 1.5rem;
+
+  width: 100%;
+}
+
+.buttonPrimary {
+  background-color: #d4e687;
+  color: black;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0.5rem 0.25rem 1.5rem;
+}

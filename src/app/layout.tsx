@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "@/styles/main.scss";
 import { Inter } from "next/font/google";
+import { BannerController } from "./components/CookieConstent/BannerController";
+import { GA4Consent } from "./components/Analytics/Ga4Consent";
 
 export const metadata: Metadata = {
   title: "Peter Coolen Creative Developer",
@@ -41,6 +43,12 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body>
         <div className="main">{children}</div>
+
+        <BannerController />
+        {/* Analytics will load on client only if allowed */}
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
+          <GA4Consent gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        )}
       </body>
     </html>
   );

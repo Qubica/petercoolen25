@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/third-parties": "^16.0.0",
     "@radix-ui/react-accordion": "^1.2.12",
     "@tailwindcss/postcss": "^4.1.16",
     "classnames": "^2.5.1",
@@ -17,6 +18,7 @@
     "next": "15.5.5",
     "postcss": "^8.5.6",
     "react": "19.1.0",
+    "react-cookie-consent": "^9.0.0",
     "react-dom": "19.1.0",
     "sass": "^1.93.2",
     "tailwindcss": "^4.1.16"
