@@ -45,7 +45,10 @@ export function GA4Consent({ gaId }: GA4ConsentProps) {
     };
     window.gtag("consent", "default", {
       analytics_storage: consentState ? "granted" : "denied",
-      ad_storage: "denied",
+      ad_user_data: consentState ? "granted" : "denied",
+      ad_personalization: consentState ? "granted" : "denied",
+      ad_storage: consentState ? "granted" : "denied",
+      wait_for_update: 500,
     });
   }, [gaId, consentState]);
 
