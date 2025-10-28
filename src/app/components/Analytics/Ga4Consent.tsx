@@ -67,7 +67,8 @@ export function GA4Consent({ gaId }: GA4ConsentProps) {
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${gaId}', { send_page_view: false, analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', ad_storage: 'denied', wait_for_update: 500 });
+gtag('consent', 'default', { analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', ad_storage: 'denied', wait_for_update: 500 });
+gtag('config', '${gaId}', { send_page_view: false });
 `,
         }}
       />
