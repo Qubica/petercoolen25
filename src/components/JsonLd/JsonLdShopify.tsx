@@ -1,6 +1,6 @@
 "use server";
 
-export async function JsonLd() {
+export async function JsonLdShopify() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -17,12 +17,12 @@ export async function JsonLd() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://petercoolen.com/#webpage",
-        url: "https://petercoolen.com/",
-        name: "Meaningful Interactions. Build Memorable Brands",
-        headline: "Meaningful interactions build memorable brands",
+        "@id": "https://petercoolen.com/headless-shopify/#webpage",
+        url: "https://petercoolen.com/headless-shopify/",
+        name: "Where every click feels like your brand",
+        headline: "Where every click feels like your brand",
         description:
-          "Peter is a creative developer crafting emotive, high-performance digital experiences, From expressive brand sites to custom Shopify builds and interactive campaigns.",
+          "Peter is a creative developer helping brands move beyond the ordinary with headless Shopify. He crafts digital journeys that feel alive, authentic, and unmistakably yours—where every detail sparks emotion and builds connection.",
         inLanguage: "en",
         about: {
           "@id": "https://petercoolen.com/#person",
@@ -34,7 +34,7 @@ export async function JsonLd() {
         name: "Peter Coolen",
         jobTitle: "Creative Developer",
         description:
-          "I build digital experiences that move, literally and emotionally. I collaborate with designers and brands to craft websites people feel, not just click.",
+          "I help brands create digital experiences that feel alive and authentic. My focus is on meaningful interactions, emotional resonance, and building memorable brands with headless Shopify.",
         url: "https://petercoolen.com/",
         email: "info@petercoolen.com",
         telephone: "+31657546027",
@@ -80,33 +80,33 @@ export async function JsonLd() {
             value: "NL003908092B27",
           },
         ],
-        slogan: "Memorable Interactions. Meaningful Impact.",
+        slogan: "Where every click feels like your brand.",
       },
       {
         "@type": "OfferCatalog",
         "@id": "https://petercoolen.com/#services",
-        name: "What We Build — We Build Together",
+        name: "How I help brands grow",
         itemListElement: [
           {
             "@type": "Offer",
-            name: "E-commerce — Custom Shopify",
+            name: "Headless Shopify Stores",
             itemOffered: {
               "@type": "Service",
-              serviceType: "Custom Shopify development",
+              serviceType: "Custom headless Shopify development",
               provider: { "@id": "https://petercoolen.com/#person" },
               description:
-                "Tailor-made Shopify solutions for speed, creative freedom, and growth: faster launches, smoother updates, and a store that finally feels like you.",
+                "Bespoke Shopify builds for brands that want more than a template. Fast, flexible, and designed to feel unmistakably yours.",
             },
           },
           {
             "@type": "Offer",
-            name: "Corporate — Expressive Brand Sites",
+            name: "Expressive Brand Sites",
             itemOffered: {
               "@type": "Service",
               serviceType: "Creative development for brand websites",
               provider: { "@id": "https://petercoolen.com/#person" },
               description:
-                "Interactive, seamless, performance-focused brand experiences that bring design and story to life and make a lasting impression.",
+                "Interactive, seamless, and performance-focused experiences that bring your story and values to life.",
             },
           },
         ],
@@ -125,7 +125,7 @@ export async function JsonLd() {
               "@type": "CreativeWork",
               name: "Orangefit — Shopify Plus Storefront",
               description:
-                "Multi-market Shopify Plus storefront built for speed and engagement with instant search, localized campaigns, and integrated loyalty and recipe features.",
+                "Custom Shopify Plus storefront built for speed and engagement. Instant search, localized campaigns, and integrated loyalty programs for a connected shopping experience.",
             },
           },
           {
@@ -135,7 +135,7 @@ export async function JsonLd() {
               "@type": "CreativeWork",
               name: "The Laundry Story — Headless Shopify",
               description:
-                "Headless Shopify architecture for creative freedom and performance. Modular storytelling, elegant design, and effortless subscriptions for a conversion-focused journey.",
+                "Headless Shopify architecture for creative freedom and high performance. Modular storytelling, elegant design, and seamless subscriptions for a conversion-focused journey.",
             },
           },
           {
@@ -145,7 +145,7 @@ export async function JsonLd() {
               "@type": "CreativeWork",
               name: "Eusexua — Shopify Hydrogen for FKA twigs’ The Eleven",
               description:
-                "Hydrogen architecture engineered with iiNDYVERSE combining livestream performance, blockchain minting, and seamless transactions to turn live art into a collectible digital experience.",
+                "Shopify Hydrogen and custom integrations for a unique digital experience. Live performance, blockchain minting, and seamless transactions turn art into a collectible journey.",
             },
           },
         ],
@@ -153,8 +153,8 @@ export async function JsonLd() {
       {
         "@type": "CreativeWork",
         "@id": "https://petercoolen.com/#cta",
-        name: "Let’s craft something people remember",
-        text: "Clean builds, clear communication, and craftsmanship you can depend on. Reach out to discuss your next project.",
+        name: "Let’s build your flagship store",
+        text: "Ready to create a digital home that feels unmistakably yours? Clean builds, clear communication, and craftsmanship you can depend on. Reach out to discuss your next project.",
         creator: { "@id": "https://petercoolen.com/#person" },
         inLanguage: "en",
         potentialAction: {

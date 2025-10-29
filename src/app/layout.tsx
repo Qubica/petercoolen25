@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "@/styles/main.scss";
 import { Inter } from "next/font/google";
-import { BannerController } from "./components/CookieConstent/BannerController";
-import { GA4Consent } from "./components/Analytics/Ga4Consent";
+import { BannerController } from "../components/CookieConstent/BannerController";
+import { GA4Consent } from "../components/Analytics/Ga4Consent";
 
 export const metadata: Metadata = {
   title: "Peter Coolen Creative Developer",

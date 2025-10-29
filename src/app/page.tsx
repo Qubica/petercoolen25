@@ -1,6 +1,7 @@
 import { Heart } from "lucide-react";
 import styles from "./page.module.scss";
-import { JsonLd } from "./components/JsonLd/JsonLd";
+import { JsonLdHome } from "../components/JsonLd/JsonLdHome";
+import Link from "next/link";
 
 export default function CreativeDeveloperLanding() {
   return (
@@ -74,10 +75,13 @@ export default function CreativeDeveloperLanding() {
               quickly becomes a growth problem.
             </p>
             <p className={styles.paragraph}>
-              I create tailor-made Shopify solutions that give your brand
-              freedom to move. Custom builds that fit your vision, your team,
-              and your goals. Faster launches, smoother updates, and a store
-              that finally feels like you.
+              I build{" "}
+              <Link className={styles.link} href="/bespoke-shopify-solutions">
+                bespoke Shopify solutions
+              </Link>{" "}
+              that give your brand freedom to move. Custom builds that fit your
+              vision, your team, and your goals. Faster launches, smoother
+              updates, and a store that finally feels like you.
             </p>
 
             <h3 className={styles.heading3}>Corporate</h3>
@@ -219,7 +223,7 @@ export default function CreativeDeveloperLanding() {
         </a>
       </div>
 
-      <JsonLd />
+      <JsonLdHome />
     </div>
   );
 }
