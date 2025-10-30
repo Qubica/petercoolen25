@@ -141,7 +141,7 @@ export default function CreativeDeveloperLanding() {
           </p>
 
           <p className={styles.paragraph}>
-            <a href="https://www.eusexua.com" className={styles.link}>
+            <a href="https://eusexua.fkatwi.gs" className={styles.link}>
               Eusexua
             </a>{" "}
             runs on a Shopify Hydrogen architecture engineered with iiNDYVERSE
