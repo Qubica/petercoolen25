@@ -29,18 +29,22 @@ export default function Landing() {
             meaningful interactions. Each one designed to turn your customers
             into loyal fans.
           </p>
-          <h2 className={styles.heading3}>
-            The importance of your website in the age of AI
-          </h2>
-          <p className={styles.paragraph}>
-            In a world where social media and AI are always shifting, your
-            website is the one place you truly own. It’s where your story, your
-            values, and your vision come together without compromise. Social
-            channels are great for discovery, but your site is where curiosity
-            turns into connection, and connection turns into loyalty. That’s why
-            I believe investing in your own digital home is more important than
-            ever.
-          </p>
+
+          <div className={styles.card}>
+            <h2 className={styles.heading3}>
+              The importance of your website in the age of Artificial
+              Intelligence
+            </h2>
+            <p className={styles.paragraph}>
+              In a world where social media and AI are always shifting, your
+              website is the one place you truly own. It’s where your story,
+              your values, and your vision come together without compromise.
+              Social channels are great for discovery, but your site is where
+              curiosity turns into connection, and connection turns into
+              loyalty. That’s why I believe investing in your own digital home
+              is more important than ever.
+            </p>
+          </div>
         </section>
 
         <section className={styles.section}>
@@ -75,14 +79,16 @@ export default function Landing() {
             trends. The best reason to go custom is when it directly supports
             your business goals and delivers a clear return on investment.
           </p>
-          <p className={styles.paragraph}>
-            The smartest strategy is to get clear on what your business really
-            needs. If you want to talk through your options and figure out the
-            best move forward,{" "}
-            <a className={styles.link} href="mailto:info@petercoolen.com">
-              I’m here to help.
-            </a>
-          </p>
+          <div className={styles.card}>
+            <p className={styles.paragraph}>
+              The smartest strategy is to get clear on what your business really
+              needs. If you want to talk through your options and figure out the
+              best move forward,{" "}
+              <a className={styles.link} href="mailto:info@petercoolen.com">
+                I’m here to help.
+              </a>
+            </p>
+          </div>
         </section>
 
         {/* Collaboration Section */}
@@ -164,39 +170,49 @@ export default function Landing() {
 
         <section className={styles.section}>
           <h2 className={styles.heading2}>
-            Trusted by <br />
-            fast moving brands
+            Trusted by brands <br />
+            that move fast
           </h2>
-
           <p className={styles.paragraph}>
-            <a href="https://www.orangefit.nl" className={styles.link}>
-              Orangefit
-            </a>{" "}
-            uses a custom Shopify Plus storefront built for speed and
-            engagement. Features like instant search, localized campaigns, and
-            integrated loyalty programs create a connected and dynamic shopping
-            experience.
+            Here are a few examples of how custom solutions have helped them
+            stand out and grow.
           </p>
 
-          <p className={styles.paragraph}>
-            <a href="https://www.thelaundrystory.nl" className={styles.link}>
-              The Laundry Story
-            </a>{" "}
-            runs on a headless Shopify architecture designed for creative
-            freedom and high performance. Modular storytelling, elegant design,
-            and seamless subscriptions deliver a smooth and conversion focused
-            journey.
-          </p>
+          <div className={styles.card}>
+            <p className={styles.paragraph}>
+              <a href="https://www.orangefit.nl" className={styles.link}>
+                Orangefit
+              </a>{" "}
+              is a multi-market Shopify Plus storefront built for speed and
+              engagement. Instant search, localized campaigns, and integrated
+              loyalty and recipe features create a connected, community-driven
+              shopping experience.
+            </p>
+          </div>
 
-          <p className={styles.paragraph}>
-            <a href="https://www.eusexua.com" className={styles.link}>
-              Eusexua
-            </a>{" "}
-            leverages Shopify Hydrogen and custom integrations for FKA twigs’
-            The Eleven. The platform combines live performance, blockchain
-            minting, and seamless transactions to turn art into a collectible
-            digital experience.
-          </p>
+          <div className={styles.card}>
+            <p className={styles.paragraph}>
+              <a href="https://www.thelaundrystory.nl" className={styles.link}>
+                The Laundry Story
+              </a>{" "}
+              runs on a headless Shopify architecture crafted for creative
+              freedom and performance. Modular storytelling, elegant design, and
+              effortless subscriptions deliver a seamless, conversion-focused
+              journey.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <p className={styles.paragraph}>
+              <a href="https://eusexua.fkatwi.gs" className={styles.link}>
+                Eusexua
+              </a>{" "}
+              runs on a Shopify Hydrogen architecture engineered with iiNDYVERSE
+              for FKA twigs’ The Eleven. It combines livestream performance,
+              blockchain-based minting, and seamless transactions to turn live
+              art into a collectible digital experience.
+            </p>
+          </div>
         </section>
 
         {/* Footer */}

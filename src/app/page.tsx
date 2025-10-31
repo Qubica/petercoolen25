@@ -67,35 +67,39 @@ export default function CreativeDeveloperLanding() {
               moves to how it works behind the scenes.
             </p>
 
-            <h3 className={styles.heading3}>E-commerce</h3>
-            <p className={styles.paragraph}>
-              For growing brands, standard Shopify themes eventually become a
-              bottleneck. They slow teams down, limit creative control, and make
-              every new campaign harder to launch. What starts as a design issue
-              quickly becomes a growth problem.
-            </p>
-            <p className={styles.paragraph}>
-              I build{" "}
-              <Link className={styles.link} href="/bespoke-shopify-solutions">
-                bespoke Shopify solutions
-              </Link>{" "}
-              that give your brand freedom to move. Custom builds that fit your
-              vision, your team, and your goals. Faster launches, smoother
-              updates, and a store that finally feels like you.
-            </p>
+            <div className={styles.card}>
+              <h3 className={styles.heading3}>E-commerce</h3>
+              <p className={styles.paragraph}>
+                For growing brands, standard Shopify themes eventually become a
+                bottleneck. They slow teams down, limit creative control, and
+                make every new campaign harder to launch. What starts as a
+                design issue quickly becomes a growth problem.
+              </p>
+              <p className={styles.paragraph}>
+                I build{" "}
+                <Link className={styles.link} href="/bespoke-shopify-solutions">
+                  bespoke Shopify solutions
+                </Link>{" "}
+                that give your brand freedom to move. Custom builds that fit
+                your vision, your team, and your goals. Faster launches,
+                smoother updates, and a store that finally feels like you.
+              </p>
+            </div>
 
-            <h3 className={styles.heading3}>Corporate</h3>
-            <p className={styles.paragraph}>
-              Most corporate sites look alike, polished but forgettable. They
-              tell people what a brand does but never show who it is. The
-              emotion gets lost in static layouts, and the story never fully
-              reaches the screen.
-            </p>
-            <p className={styles.paragraph}>
-              I build expressive brand experiences that bring design and story
-              to life. Interactive, seamless, and performance-focused. Crafted
-              to move with intention and make a lasting impression.
-            </p>
+            <div className={styles.card}>
+              <h3 className={styles.heading3}>Corporate</h3>
+              <p className={styles.paragraph}>
+                Most corporate sites look alike, polished but forgettable. They
+                tell people what a brand does but never show who it is. The
+                emotion gets lost in static layouts, and the story never fully
+                reaches the screen.
+              </p>
+              <p className={styles.paragraph}>
+                I build expressive brand experiences that bring design and story
+                to life. Interactive, seamless, and performance-focused. Crafted
+                to move with intention and make a lasting impression.
+              </p>
+            </div>
 
             <div className={styles.buttonRow}>
               <a
@@ -119,36 +123,46 @@ export default function CreativeDeveloperLanding() {
             Trusted by brands <br />
             that move fast
           </h2>
-
           <p className={styles.paragraph}>
-            <a href="https://www.orangefit.nl" className={styles.link}>
-              Orangefit
-            </a>{" "}
-            is a multi-market Shopify Plus storefront built for speed and
-            engagement. Instant search, localized campaigns, and integrated
-            loyalty and recipe features create a connected, community-driven
-            shopping experience.
+            Here are a few examples of how custom solutions have helped them
+            stand out and grow.
           </p>
 
-          <p className={styles.paragraph}>
-            <a href="https://www.thelaundrystory.nl" className={styles.link}>
-              The Laundry Story
-            </a>{" "}
-            runs on a headless Shopify architecture crafted for creative freedom
-            and performance. Modular storytelling, elegant design, and
-            effortless subscriptions deliver a seamless, conversion-focused
-            journey.
-          </p>
+          <div className={styles.card}>
+            <p className={styles.paragraph}>
+              <a href="https://www.orangefit.nl" className={styles.link}>
+                Orangefit
+              </a>{" "}
+              is a multi-market Shopify Plus storefront built for speed and
+              engagement. Instant search, localized campaigns, and integrated
+              loyalty and recipe features create a connected, community-driven
+              shopping experience.
+            </p>
+          </div>
 
-          <p className={styles.paragraph}>
-            <a href="https://eusexua.fkatwi.gs" className={styles.link}>
-              Eusexua
-            </a>{" "}
-            runs on a Shopify Hydrogen architecture engineered with iiNDYVERSE
-            for FKA twigs’ The Eleven. It combines livestream performance,
-            blockchain-based minting, and seamless transactions to turn live art
-            into a collectible digital experience.
-          </p>
+          <div className={styles.card}>
+            <p className={styles.paragraph}>
+              <a href="https://www.thelaundrystory.nl" className={styles.link}>
+                The Laundry Story
+              </a>{" "}
+              runs on a headless Shopify architecture crafted for creative
+              freedom and performance. Modular storytelling, elegant design, and
+              effortless subscriptions deliver a seamless, conversion-focused
+              journey.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <p className={styles.paragraph}>
+              <a href="https://eusexua.fkatwi.gs" className={styles.link}>
+                Eusexua
+              </a>{" "}
+              runs on a Shopify Hydrogen architecture engineered with iiNDYVERSE
+              for FKA twigs’ The Eleven. It combines livestream performance,
+              blockchain-based minting, and seamless transactions to turn live
+              art into a collectible digital experience.
+            </p>
+          </div>
         </section>
 
         {/* Footer */}
