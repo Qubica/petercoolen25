@@ -1,6 +1,7 @@
 import { Heart } from "lucide-react";
 import styles from "./page.module.scss";
 import { JsonLdSystem } from "@/components/JsonLd/JsonLdSystem";
+import Link from "next/link";
 
 export default function Landing() {
   return (
@@ -21,7 +22,12 @@ export default function Landing() {
           <p className={styles.paragraph}>
             I help brands and designers move beyond off-the-shelf themes and
             stitched-together plugins, into unified digital experiences that
-            feel intentional, coherent, and completely on-brand.
+            feel intentional, coherent, and completely on-brand. The kind of
+            experiences people remember and{" "}
+            <Link href={"/"} className={styles.link}>
+              like to interact with
+            </Link>
+            .
           </p>
         </section>
 
@@ -129,9 +135,16 @@ export default function Landing() {
 
           <h3 className={styles.heading3}>Step 3: Custom Build</h3>
           <p className={styles.paragraph}>
-            I implement the system in a clean, performant build. Custom Shopify
-            themes or headless storefronts. Brand websites and platforms.
-            Interactive experiences and campaigns.
+            I implement the system in a clean, performant build.{" "}
+            <Link className={styles.link} href="/bespoke-shopify-solutions">
+              Custom Shopify themes
+            </Link>{" "}
+            or{" "}
+            <Link className={styles.link} href="/bespoke-shopify-solutions">
+              headless storefronts
+            </Link>
+            . Brand websites and platforms. Interactive experiences and
+            campaigns.
           </p>
 
           <h3 className={styles.heading3}>Step 4: Extend & Evolve</h3>
