@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { CookieBanner } from "./CookieBanner";
-import { shouldShowBanner } from "@/app/lib/client-cookie-utils";
+import { shouldShowBanner } from "@/lib/client-cookie-utils";
 
 export function BannerController() {
   const [showBanner, setShowBanner] = useState(false);

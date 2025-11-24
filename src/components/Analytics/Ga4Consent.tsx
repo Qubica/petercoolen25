@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Script from "next/script";
-import { shouldShowAnalytics } from "@/app/lib/client-cookie-utils";
+import { shouldShowAnalytics } from "@/lib/client-cookie-utils";
 
 declare global {
   interface Window {

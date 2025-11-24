@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { setCookieConsent } from "@/app/lib/client-cookie-utils";
+import { setCookieConsent } from "@/lib/client-cookie-utils";
 
 import styles from "./CookieBanner.module.scss";
 import { Ban, Cookie } from "lucide-react";
