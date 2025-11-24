@@ -274,14 +274,14 @@ export default function Landing() {
         </section>
       </main>
 
-      <div className={styles.aboutFixed}>
+      {/* <div className={styles.aboutFixed}>
         <a href="mailto:info@petercoolen.com" className={styles.buttonPrimary}>
           <div>Let&apos;s build your store</div>
           <span className={styles.buttonPrimaryIcon}>
             <Heart />
           </span>
         </a>
-      </div>
+      </div> */}
 
       <JsonLdShopify />
     </div>

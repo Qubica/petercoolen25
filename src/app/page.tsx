@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { GraduationCap, Heart } from "lucide-react";
 import styles from "./page.module.scss";
 import { JsonLdHome } from "../components/JsonLd/JsonLdHome";
 import Link from "next/link";
@@ -46,10 +46,21 @@ export default function CreativeDeveloperLanding() {
           <p className={styles.paragraph}>
             Templates are fast, but they all feel the same. Most brands outgrow
             them. The story, the detail and the emotion gets lost in the
-            structure. You can’t build distinction from a preset. <br />
+            structure. You can’t build distinction from a preset.
+          </p>
+          <p className={styles.paragraph}>
             That’s why I build from the ground up. Every element is crafted to
             fit the brand. And every animation is designed to evoke emotion.
           </p>
+
+          <div className={styles.buttonRow}>
+            <a href="/one-brand-one-system" className={styles.buttonPrimary}>
+              <div>How I build your brand voice</div>
+              <span className={styles.buttonPrimaryIcon}>
+                <GraduationCap />
+              </span>
+            </a>
+          </div>
         </section>
 
         <section className={styles.section}>
@@ -99,21 +110,6 @@ export default function CreativeDeveloperLanding() {
                 to life. Interactive, seamless, and performance-focused. Crafted
                 to move with intention and make a lasting impression.
               </p>
-            </div>
-
-            <div className={styles.buttonRow}>
-              <a
-                href="mailto:info@petercoolen.com"
-                className={styles.buttonPrimary}
-              >
-                <div>Let&apos;s work together</div>
-                <span className={styles.buttonPrimaryIcon}>
-                  <Heart />
-                </span>
-              </a>
-              {/* <a href="#work" className={styles.buttonSecondary}>
-              See my work
-            </a> */}
             </div>
           </div>
         </section>
@@ -228,14 +224,14 @@ export default function CreativeDeveloperLanding() {
         </section>
       </main>
 
-      <div className={styles.aboutFixed}>
+      {/* <div className={styles.aboutFixed}>
         <a href="mailto:info@petercoolen.com" className={styles.buttonPrimary}>
           <div>Let&apos;s work together</div>
           <span className={styles.buttonPrimaryIcon}>
             <Heart />
           </span>
         </a>
-      </div>
+      </div> */}
 
       <JsonLdHome />
     </div>
