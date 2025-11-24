@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { GraduationCap, Heart } from "lucide-react";
 import styles from "./page.module.scss";
 import { JsonLdShopify } from "../../components/JsonLd/JsonLdShopify";
 
@@ -111,6 +111,15 @@ export default function Landing() {
             headless Shopify, we build from the ground up, ensuring every
             element supports your goals and delivers a memorable experience.
           </p>
+
+          <div className={styles.buttonRow}>
+            <a href="/one-brand-one-system" className={styles.buttonPrimary}>
+              <div>The benefits of a unified system</div>
+              <span className={styles.buttonPrimaryIcon}>
+                <GraduationCap />
+              </span>
+            </a>
+          </div>
         </section>
 
         <section className={styles.section}>
