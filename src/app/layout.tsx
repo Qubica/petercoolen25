@@ -3,6 +3,7 @@ import "@/styles/main.scss";
 import { Inter } from "next/font/google";
 import { BannerController } from "../components/CookieConstent/BannerController";
 import { GA4Consent } from "../components/Analytics/Ga4Consent";
+import { Avatar } from "@/components/Avatar/Avatar";
 
 export const metadata: Metadata = {
   title: "Peter Coolen Creative Developer",
@@ -43,6 +44,8 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body>
         <div className="main">{children}</div>
+
+        <Avatar />
 
         <BannerController />
         {/* Analytics will load on client only if allowed */}

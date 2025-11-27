@@ -1,0 +1,40 @@
+.el {
+  position: fixed;
+  top: calc(100svh - 8rem);
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  @media screen and (min-width: 768px) {
+    top: calc(100svh - 8rem);
+    right: 4rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
