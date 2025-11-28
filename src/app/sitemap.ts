@@ -6,13 +6,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.petercoolen.com",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 0.5,
     },
     {
       url: "https://www.petercoolen.com/bespoke-shopify-solutions",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.5,
     },
     {
       url: "https://www.petercoolen.com/one-brand-one-system",
